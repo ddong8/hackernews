@@ -1,0 +1,24 @@
+{
+  "lang": {
+    "english": "English",
+    "chinese": "Chinese"
+  },
+  "label": "Built with Nuxt.js",
+  "pages": {
+    "prev": "prev",
+    "more": "more"
+  },
+  "feeds": {
+    "news": "News",
+    "newest": "Newest",
+    "ask": "Ask",
+    "show": "Show",
+    "jobs": "Job"
+  },
+  "article_action": {
+    "by": "by",
+    "ago": "ago",
+    "comments": "comments",
+    "created": "Created"
+  }
+}

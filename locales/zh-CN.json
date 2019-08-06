@@ -1,0 +1,28 @@
+{
+  "lang": {
+    "english": "英语",
+    "chinese": "中文"
+  },
+  "label": "使用Nuxt.js构建",
+  "pages": {
+    "prev": "前一页",
+    "more": "后一页"
+  },
+  "feeds": {
+    "news": "新闻",
+    "newest": "最新",
+    "ask": "问答",
+    "show": "展览",
+    "jobs": "工作"
+  },
+  "article_action": {
+    "by": "发表于",
+    "ago": "前",
+    "comments": "评论",
+    "no-comments": "还没有评论",
+    "created": "创建于",
+    "points": "次点击",
+    "user": "用户",
+    "submissions": "建议"
+  }
+}

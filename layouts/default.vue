@@ -136,7 +136,6 @@ a {
 
   .dropdown_bar {
     width: 20%;
-    font-size: 0.9em;
     float: right;
     @media (min-width: 991px) {
       height: 55px;
@@ -200,6 +199,20 @@ a {
 
     a {
       margin-right: 0.8em;
+    }
+  }
+}
+
+
+/* 适配iphone5/SE */
+@media (max-width: 320px) {
+  .header {
+    .inner {
+      padding: 15px;
+    }
+
+    a {
+      margin-right: 0.7em;
     }
   }
 }

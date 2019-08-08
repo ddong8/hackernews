@@ -168,7 +168,7 @@ a {
 @media (max-width: 600px) {
   .header {
     .inner {
-      padding: 13px;
+      padding: 15px;
     }
 
     a {
@@ -181,7 +181,7 @@ a {
 @media (max-width: 320px) {
   .header {
     .inner {
-      padding: 10px;
+      padding: 15px;
       .feed_list_item {
         font-size: 12px;
       }

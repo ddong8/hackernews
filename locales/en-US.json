@@ -21,6 +21,10 @@
     "by": "by",
     "ago": "ago",
     "comments": "comments",
-    "created": "Created"
+    "no-comments": "No comment yet",
+    "created": "Created",
+    "points": "points",
+    "user": "user",
+    "submissions": "submissions"
   }
 }

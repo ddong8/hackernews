@@ -42,6 +42,7 @@ export default {
   display: flex;
   flex-direction: column;
   position: relative;
+  height: 40px;
   @media (min-width: 991px) {
     &:hover {
       .Dropdown__List {
@@ -50,7 +51,6 @@ export default {
     }
   }
   &__Title {
-    height: 60px;
     width: 100%;
     display: flex;
     cursor: pointer;
@@ -60,9 +60,9 @@ export default {
     font-size: 14px;
     text-decoration: none;
     letter-spacing: 0.25px;
+    font-weight: bold;
     @media (min-width: 991px) {
       height: 24px;
-      padding-right: 15px;
     }
     &:after {
       content: " ";
@@ -74,11 +74,6 @@ export default {
       border-right: 6px solid transparent;
       border-top: 6px solid #fff;
       border-left: 6px solid transparent;
-      @media (min-width: 991px) {
-        top: 11px;
-        right: 1px;
-        position: absolute;
-      }
     }
     &:hover,
     &:focus {
@@ -104,17 +99,17 @@ export default {
     width: auto;
     display: none;
     flex-wrap: wrap;
-    position: relative;
+    position: absolute;
     padding: 0;
-    margin-top: 16px;
+    margin-top: 39px;
     list-style: none;
     @media (min-width: 991px) {
       min-width: 100%;
       position: absolute;
-      background-color: #fff;
+      background-color: #2e495e;
       border: 1px solid #dbdfe1;
       border-top: none;
-      top: 31%;
+      top: 20%;
       left: -25px;
       right: -25px;
       &::before {
@@ -136,6 +131,7 @@ export default {
     }
     &--visible {
       display: flex;
+      background: #2e495e;
       @media (min-width: 991px) {
         display: none;
       }
@@ -153,9 +149,9 @@ export default {
       &__Link {
         width: 100%;
         display: flex;
-        color: #35495e;
+        color: #fff;
         padding: 12px 0;
-        font-size: 15px;
+        font-size: 12px;
         text-decoration: none;
         letter-spacing: 0.25px;
         align-items: center;

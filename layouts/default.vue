@@ -2,12 +2,14 @@
   <div id="app">
     <header class="header">
       <nav class="inner" role="navigation">
+        <div class="feed_list_item">
         <router-link to="/" exact>
           <img class="logo" src="~/assets/logo.svg" alt="logo">
         </router-link>
         <router-link v-for="(list, key) in feeds" :key="key" :to="$i18n.path(`${key}`)">
           {{ list.title }}
         </router-link>
+        </div>
         <div class="dropdown_bar">
           <nuxt-header-nav-menu-dropdown :dropdownList="langList" :dropdownLabel="$store.state.locale.toUpperCase()" />
         </div>
@@ -79,28 +81,22 @@ a {
   background-color: #2E495E;
   z-index: 999;
   height: 55px;
+  position: fixed;
+  width: 100%;
+  margin-top:0;
 
   .inner {
     max-width: 800px;
     box-sizing: border-box;
-    margin: 0 auto;
+    margin: 0px auto;
     padding: 15px 5px;
-    display: block;
-    position: fixed;
-    z-index: 995;
-    top: 60px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow-y: auto;
-    @media (min-width: 991px) {
-      display: flex;
-      flex: 1;
-      top: 0;
-      flex-wrap: nowrap;
-      overflow-y: visible;
-      position: relative;
-    }
+  }
+
+  .feed_list_item{
+    height: 24px;
+    float: left;
+    width: 84%;
+    font-size: 14px;
   }
 
   a {
@@ -127,14 +123,19 @@ a {
     }
   }
 
-  .dropdown_bar {
+  .github {
+    color: #fff;
     font-size: 0.9em;
-    display: flex;
+    margin: 0;
     float: right;
-    margin-left 220px;
+  }
+
+  .dropdown_bar {
+    width: 16%;
+    font-size: 0.9em;
+    float: right;
     @media (min-width: 991px) {
-      width: 80px;
-      height: 79px;
+      height: 55px;
     }
   }
 }
@@ -150,6 +151,7 @@ a {
   max-width: 800px;
   margin: 0 auto;
   position: relative;
+  padding-top: 55px;
 }
 
 .appear-active {

@@ -70,6 +70,18 @@ body {
   padding: 0;
   color: #2E495E;
   overflow-y: scroll;
+  /* 适配iPhone6/7/8 plus */
+  @media (max-width: 420px) {
+    font-size: 0.9em;
+  }
+  /* 适配iPhone6/7/8 */
+  @media (max-width: 380px) {
+    font-size: 0.8em;
+  }
+  /* 适配iPhone5/SE */
+  @media (max-width: 320px) {
+    font-size: 0.7em;
+  }
 }
 
 a {
@@ -96,7 +108,6 @@ a {
     height: 24px;
     float: left;
     width: 80%;
-    font-size: 14px;
   }
 
   a {
@@ -138,6 +149,22 @@ a {
   margin-right: 10px;
   display: inline-block;
   vertical-align: middle;
+
+  /* 适配iPhone6/7/8 plus */
+  @media (max-width: 420px) {
+    width: 22px;
+    margin-right: 9px;
+  }
+  /* 适配iPhone6/7/8 */
+  @media (max-width: 380px) {
+    width: 21px;
+    margin-right: 9px;
+  }
+  /* 适配iPhone5/SE */
+  @media (max-width: 320px) {
+    width: 20px;
+    margin-right: 8px;
+  }
 }
 
 .view {
@@ -173,22 +200,6 @@ a {
 
     a {
       margin-right: 0.8em;
-    }
-  }
-}
-
-  /* 适配iphone5/SE */
-@media (max-width: 320px) {
-  .header {
-    .inner {
-      padding: 15px;
-      .feed_list_item {
-        font-size: 12px;
-      }
-    }
-
-    a {
-      margin-right: 0.7em;
     }
   }
 }

@@ -57,7 +57,6 @@ export default {
     justify-content: center;
     align-items: center;
     color: #fff;
-    font-size: 14px;
     text-decoration: none;
     letter-spacing: 0.25px;
     font-weight: bold;
@@ -103,31 +102,51 @@ export default {
     padding: 0;
     margin-top: 31px;
     list-style: none;
+    top: 20%;
+    left: -25px;
+    right: -25px;
+
+    &::before {
+      display: block;
+      position: absolute;
+      content: "";
+      width: 14px;
+      height: 14px;
+      background: #fff;
+      z-index: 2;
+      top: -7px;
+      border-top: 1px solid #d9d9d9;
+      border-right: 1px solid #d9d9d9;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      border-radius: 2px;
+      left: 45%;
+      /* 适配iPhone5/SE */
+      @media (max-width:320px) {
+        width: 10px;
+        height: 10px;
+        top: -5px;
+      }
+      /* 适配iPhone6/7/8 */
+      @media (max-width:380px) {
+        width: 12px;
+        height: 12px;
+        top: -6px;
+      }
+      /* 适配iPhone6/7/8 plus */
+      @media (max-width:420px) {
+        width: 13px;
+        height: 13px;
+        top: -6.5px;
+      }
+    }
+
     @media (min-width: 991px) {
       min-width: 100%;
       position: absolute;
       background-color: #2e495e;
       border: 1px solid #dbdfe1;
       border-top: none;
-      top: 20%;
-      left: -25px;
-      right: -25px;
-      &::before {
-        display: block;
-        position: absolute;
-        content: "";
-        width: 14px;
-        height: 14px;
-        background: #fff;
-        z-index: 2;
-        top: -7px;
-        border-top: 1px solid #d9d9d9;
-        border-right: 1px solid #d9d9d9;
-        -webkit-transform: rotate(-45deg);
-        transform: rotate(-45deg);
-        border-radius: 2px;
-        left: 45%;
-      }
     }
     &--visible {
       display: flex;
@@ -149,7 +168,6 @@ export default {
         display: flex;
         color: #fff;
         padding: 12px 0;
-        font-size: 12px;
         text-decoration: none;
         letter-spacing: 0.25px;
         align-items: center;

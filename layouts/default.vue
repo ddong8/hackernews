@@ -123,13 +123,6 @@ a {
     }
   }
 
-  .github {
-    color: #fff;
-    font-size: 0.9em;
-    margin: 0;
-    float: right;
-  }
-
   .dropdown_bar {
     width: 20%;
     font-size: 0.9em;
@@ -175,16 +168,29 @@ a {
 @media (max-width: 600px) {
   .header {
     .inner {
-      padding: 15px;
+      padding: 13px;
     }
 
     a {
-      margin-right: 1em;
-    }
-
-    .github {
-      display: none;
+      margin-right: 0.8em;
     }
   }
 }
+
+  /* 适配iphone5/SE */
+@media (max-width: 320px) {
+  .header {
+    .inner {
+      padding: 10px;
+      .feed_list_item {
+        font-size: 12px;
+      }
+    }
+
+    a {
+      margin-right: 0.7em;
+    }
+  }
+}
+
 </style>

@@ -1,9 +1,11 @@
 {
   "lang": {
-    "english": "英语",
-    "chinese": "中文"
+    "en-US": "英语",
+    "zh-CN": "中文",
+    "jp": "日本语",
+    "kr": "韩语",
+    "fr": "法语"
   },
-  "label": "使用Nuxt.js构建",
   "pages": {
     "prev": "前一页",
     "more": "后一页"

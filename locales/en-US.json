@@ -1,9 +1,11 @@
 {
   "lang": {
-    "english": "English",
-    "chinese": "Chinese"
+    "en-US": "English",
+    "zh-CN": "Chinese",
+    "jp": "Japanese",
+    "kr": "korean",
+    "fr": "France"
   },
-  "label": "Built with Nuxt.js",
   "pages": {
     "prev": "prev",
     "more": "more"

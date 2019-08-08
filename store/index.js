@@ -20,7 +20,7 @@ export const state = () => {
     feeds: {
       /* [page: number] : [ [id: number] ] */
     },
-    locales: ['zh-CN', 'en'],
+    locales: ['zh-CN', 'en-US'],
     locale: 'zh-CN'
   }
 

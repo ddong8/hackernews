@@ -11,7 +11,7 @@
         </router-link>
         </div>
         <div class="dropdown_bar">
-          <nuxt-header-nav-menu-dropdown :dropdownList="langList" :dropdownLabel="$store.state.locale.toUpperCase()" />
+          <nuxt-header-nav-menu-dropdown :dropdownList="langList" :dropdownLabel="$t('lang.' + $store.state.locale)" />
         </div>
       </nav>
     </header>
@@ -50,11 +50,11 @@ export default {
     langList() {
       let current_path = this.$route.fullPath.replace('/'+ this.$i18n.locale, '')
       return [
-        { name: 'English', path: '/en' + current_path },
-        { name: '简体中文', path: '/zh-CN' + current_path },
-        { name: '日本語', path: '/jp' + current_path },
-        { name: '한국어', path: '/kr' + current_path },
-        { name: 'Français', path: '/fr' + current_path }
+        { name: 'en-US', path: '/en-US' + current_path },
+        { name: 'zh-CN', path: '/zh-CN' + current_path },
+        // { name: 'jp', path: '/jp' + current_path },
+        // { name: 'kr', path: '/kr' + current_path },
+        // { name: 'fr', path: '/fr' + current_path }
       ]
     }
   }

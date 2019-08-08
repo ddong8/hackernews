@@ -12,7 +12,7 @@ export default ({ app, store }) => {
     fallbackLocale: 'zh-CN',
     messages: {
       'zh-CN': require('~/locales/zh-CN.json'),
-      'en': require('~/locales/en.json')
+      'en-US': require('~/locales/en-US.json')
     }
   })
 

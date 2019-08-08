@@ -6,10 +6,10 @@
     <ul class="Dropdown__List" :class="{ 'Dropdown__List--visible': show }">
       <li class="Dropdown__List__Item" v-for="item in dropdownList" :key="item.name">
         <a v-if="item.blank" class="Dropdown__List__Item__Link" :href="item.path" target="_blank" rel="noopener">
-          {{ item.name }}
+          {{ $t('lang.' + item.name) }}
         </a>
         <a v-else class="Dropdown__List__Item__Link" :href="item.path">
-          {{ item.name }}
+          {{ $t('lang.' + item.name) }}
         </a>
       </li>
     </ul>

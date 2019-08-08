@@ -101,7 +101,7 @@ export default {
     flex-wrap: wrap;
     position: absolute;
     padding: 0;
-    margin-top: 39px;
+    margin-top: 31px;
     list-style: none;
     @media (min-width: 991px) {
       min-width: 100%;

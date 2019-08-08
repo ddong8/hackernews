@@ -95,7 +95,7 @@ a {
   .feed_list_item{
     height: 24px;
     float: left;
-    width: 84%;
+    width: 80%;
     font-size: 14px;
   }
 
@@ -131,7 +131,7 @@ a {
   }
 
   .dropdown_bar {
-    width: 16%;
+    width: 20%;
     font-size: 0.9em;
     float: right;
     @media (min-width: 991px) {

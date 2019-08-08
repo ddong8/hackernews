@@ -141,8 +141,6 @@ export default {
       display: flex;
       height: 50px;
       border-top: 1px solid #dbdfe1;
-      padding-right: 5px;
-      padding-left: 5px;
       @media (min-width: 991px) {
         width: auto;
       }
